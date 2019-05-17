@@ -77,3 +77,4 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (set-frame-parameter nil 'fullscreen 'fullboth)
 (setq visible-bell nil)
+(setq ring-bell-function 'ignore)
