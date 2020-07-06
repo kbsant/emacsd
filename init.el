@@ -63,6 +63,9 @@
 (add-hook 'prog-mode-hook #'paredit-mode)
 (add-hook 'prog-mode-hook #'company-mode)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+(require 'flycheck-clj-kondo)
+(global-flycheck-mode)
+(global-auto-revert-mode)
 ;; Neotree
 (add-to-list 'load-path "~/.emacs.d/jaypei/emacs-neotree")
 (require 'neotree)

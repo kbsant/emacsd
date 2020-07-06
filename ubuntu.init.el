@@ -60,6 +60,9 @@
 (add-hook 'prog-mode-hook #'paredit-mode)
 (add-hook 'prog-mode-hook #'company-mode)
 ;; only works in emacs 26 and up (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+(require 'flycheck-clj-kondo)
+(global-flycheck-mode)
+(global-auto-revert-mode)
 ;; Neotree
 (require 'neotree)
 (setq neo-window-width 25)
