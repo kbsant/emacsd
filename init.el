@@ -16,6 +16,7 @@
                       markdown-mode
                       evil
                       paredit
+                      neotree
                       rainbow-delimiters))
 (dolist (p my-packages)
   (unless (package-installed-p p)
@@ -33,7 +34,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (magit company better-defaults markdown-mode powerline dracula-theme rainbow-delimiters paredit cider clojure-mode)))
+    (neotree company better-defaults markdown-mode powerline dracula-theme rainbow-delimiters paredit cider clojure-mode)))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -67,12 +68,12 @@
 (global-flycheck-mode)
 (global-auto-revert-mode)
 ;; Neotree
-(add-to-list 'load-path "~/.emacs.d/jaypei/emacs-neotree")
 (require 'neotree)
 (setq neo-window-width 15)
 (setq neo-window-fixed-size nil)
 (setq neo-theme 'arrow)
 (neotree-dir "~/dev/proj")
+(setq neo-autorefresh nil)
 (neo-buffer--unlock-width)
 ;; Screen layout
 (tool-bar-mode -1)
