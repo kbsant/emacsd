@@ -22,7 +22,7 @@
   (unless (package-installed-p p)
     (package-install p)))
 
-(setenv "JAVA_HOME" "/Users/euser/app/openjdk-zulu11.43.1007")
+(setenv "JAVA_HOME" "~/app/openjdk-zulu11.43.1007")
 ;; Auto-customizations
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
