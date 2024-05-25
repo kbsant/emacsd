@@ -80,3 +80,4 @@
 ;; (set-frame-parameter nil 'fullscreen 'fullboth)
 (setq visible-bell nil)
 (setq ring-bell-function 'ignore)
+(global-set-key (kbd "M-¥") (lambda () (interactive) (insert "\\")))
